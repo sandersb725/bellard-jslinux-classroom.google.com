@@ -549,8 +549,8 @@ function start_vm(user, pwd)
     rows = (params["rows"] | 0) || 30;
     font_size = (params["font_size"] | 0) || 15;
     guest_url = params["guest_url"] || "";
-    width = (params["w"] | 0) || 1515;
-    height = (params["h"] | 0) || 851;
+    width = (params["w"] | 0) || 1024;
+    height = (params["h"] | 0) || 768;
     graphic_enable = params["graphic"] | 0;
     net_url = params["net_url"]; /* empty string means no network */
     if (typeof net_url == "undefined")
