@@ -1,0 +1,19 @@
+Some tests:
+
+- Compile hello.c:
+
+  gcc hello.c -o hello
+  ./hello
+
+- Compute 1000 digits of pi:
+
+  tinypi 1000 pi.txt
+  cat pi.txt
+
+- Run the 128 bit version of riscvemu:
+
+  riscvemu128 -m 16 rv128test.bin
+
+- Run QuickJS:
+
+  qjs hello.js
