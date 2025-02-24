@@ -16,6 +16,19 @@
       </progress>
     </div>
 </div>
+<button onclick="openFullscreen();">Open Video in Fullscreen Mode</button>
 <script type="text/javascript" src="term.js"></script>
 <script type="text/javascript" src="jslinux.js"></script>
+<script>
+var elem = document.getElementById("term_container");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
 <div id="copyright">&copy; 2011-2021 Fabrice Bellard - <a href="news.html">News</a> - <a href="index.html">VM list</a> - <a href="faq.html">FAQ</a> - <a href="tech.html">Technical notes</a></div>
