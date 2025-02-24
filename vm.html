@@ -17,10 +17,10 @@
     </div>
 </div>
 <button onclick="openFullscreen();">Open Video in Fullscreen Mode</button>
-<script type="text/javascript" src="term.js" id="term"></script>
-<script type="text/javascript" src="jslinux.js" id="jslinux"></script>
+<script type="text/javascript" src="term.js"></script>
+<script type="text/javascript" src="jslinux.js"></script>
 <script>
-var elem = document.getElementById("jslinux");
+var elem = document.getElementById("term_container");
 function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
